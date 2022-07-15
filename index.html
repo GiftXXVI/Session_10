@@ -9,7 +9,7 @@
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" href="dist/theme/blood.css">
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -18,31 +18,135 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section data-markdown>
-				# Full Stack Web Developer Nanodegree
-				## Session 10
+			<section data-markdown data-background-image="images/endless-constellation.svg">
+				## Full Stack Web Developer Nanodegree
+				### Session 10
 			</section>
-			<section data-markdown>
-				# Recap
-				1. https://strawpoll.com/polls/61gDBaR7Lyw
-				2. https://strawpoll.com/polls/PbZqoNvLBnN
-				3. https://strawpoll.com/polls/eNg6RkX7AgA
-				4. https://strawpoll.com/polls/B2ZB3k1w7yJ
-				5. https://strawpoll.com/polls/2ayLWj4XqZ4
-			</section>
-			<section data-markdown>
-				# Containers
-				- A container is a standard unit of software that packages up code and all its dependencies so the
-				application runs quickly and reliably from one computing environment to another.
-				- Containers images are lightweight, standalone and they include everything needed to run an
-				application: code,
-				runtime, system tools, system libraries and settings.
-				- Container images become containers at runtime.
-				- Containers isolate software from its environment and ensure that it works uniformly despite differences
-				for instance between development and staging.
+			<section data-markdown data-background-image="images/endless-constellation.svg">
+				## Recap
+				- [🔗 Psycopg2](https://strawpoll.com/polls/61gDBaR7Lyw)
+				- [🔗 ACID properties](https://strawpoll.com/polls/PbZqoNvLBnN)
+				- [🔗 Social Engineering](https://strawpoll.com/polls/eNg6RkX7AgA)
+				- [🔗 Authentication](https://strawpoll.com/polls/B2ZB3k1w7yJ)
+				- [🔗 RBAC](https://strawpoll.com/polls/2ayLWj4XqZ4)
 			</section>
 			<section>
-				#
+				<section data-markdown>
+					## Containers
+				</section>
+				<section data-markdown>
+					### What is a Container?
+					- A container is a standard unit of software that packages up code and all its dependencies so the
+					application runs quickly and reliably from one computing environment to another.
+				</section>
+				<section data-markdown>
+					### Container Images
+					- Containers images are lightweight, standalone and they include everything needed to run an
+					application: code,
+					runtime, system tools, system libraries and settings.
+					- Container images become containers at runtime.
+				</section>
+				<section data-markdown>
+					### Why do we use Containers?
+					- Containers isolate software from its environment and ensure that it works uniformly despite
+					differences for instance between development and staging.
+				</section>
+			</section>
+			<section>
+				<section data-markdown>
+					## Docker
+				</section>
+				<section data-markdown>
+					### What is Docker?
+					- Docker is an open platform for developing, shipping, and running applications.
+					- Docker provides the ability to package and run an application in a container.
+				</section>
+				<section data-markdown>
+					### Docker Engine (CLI)
+					- Docker Engine acts as a client-server application for building containers that can be accessed
+					from the Terminal.
+					- It has the following components:
+					- dockerd: a server with a long-running daemon process.
+					- APIs: specify interfaces that programs can use to talk to and instruct the Docker daemon.
+					- docker: A command line interface (CLI) client.
+				</section>
+				<section data-markdown>
+					### Docker Destop (GUI)
+					- Docker Desktop is an easy-to-install application with a Graphical User Interface (GUI).
+					- It includes the Docker Engine.
+					- It is available for MacOS, Windows and Linux (deb package for Debian/Ubuntu and rpm package for
+					Fedora/Red Hat).
+				</section>
+				<section data-markdown>
+					### Docker Playground (Online)
+					- You can also use the Docker Playground to learn Docker in an online environment.
+					- You can also use you Terminal to ssh into the Playground VM.
+					- URL: [🔗 Docker Playground](https://labs.play-with-docker.com/)
+				</section>
+			</section>
+			<section>
+				<section data-markdown>
+					## Docker Images
+				</section>
+				<section data-markdown>
+					### What is a Docker Image
+					- An image is a read-only template with instructions for creating a Docker container.
+					- It usually consists of a file system with files and packages necessary to run your applications.
+					- Often, an image is based on another image, with some additional customization.
+				</section>
+				<section data-markdown>
+					### Example Recipe
+					1. start with the Python3 image, install Flask, Flask-SQLAlchemy (and other requirements)
+					2. copy your source code files
+					3. define a program to run (such as gunicorn or waitress web servers)
+				</section>
+				<section data-markdown>
+					### ... From Images, To Containers
+					- From there you are able to create containers from your image.
+					- A container is a runnable instance of an image.
+					- A container is defined by its image as well as any configuration options you provide to it when
+					you create or start it.
+				</section>
+			</section>
+			<section>
+				<section data-markdown>
+					## Docker Hub
+				</section>
+				<section data-markdown>
+					### What is Docker Hub?
+					- Docker Hub is a service provided by Docker for finding and sharing container images.
+					- It is the world’s largest repository of container images.
+					- You can create public repositories for free or choose a subscription plan for private
+					repositories.
+				</section>
+				<section data-markdown>
+					### Features of Docker Hub
+					| Feature | Description |
+					|---|---|
+					| Repositories | Push and pull container images. |
+					| Teams & Organizations | Manage access to private repositories of container images. |
+					| Docker Official Images | Pull and use high-quality container images provided by Docker. |
+				</section>
+				<section data-markdown>
+					### Features of Docker Hub
+					| Feature | Description |
+					|---|---|
+					| Docker Verified Publisher Images | Pull and use high- quality container images provided by
+					external vendors. |
+					| Builds | Automatically build container images from GitHub and Bitbucket and push them to Docker
+					Hub. |
+				</section>
+				<section data-markdown>
+					### Features of Docker Hub
+					| Feature | Description |
+					|---|---|
+					| Webhooks | Trigger actions after a successful push to a repository to integrate Docker Hub with
+					other services. |
+				</section>
+			</section>
+			<section data-markdown>
+				## Resources
+				https://www.docker.com/resources/what-container/
 			</section>
 		</div>
 	</div>
