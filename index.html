@@ -153,7 +153,7 @@
 					## 🗃 Dockerfiles
 				</section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
-					### What are Dockerfiles?
+					### What is a Dockerfile?
 					- A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 					- Docker can build images automatically by reading the instructions from a Dockerfile.
 					- A docker image consists of read-only layers of which each represents a Dockerfile instruction.
@@ -196,6 +196,45 @@
 					RUN pip install -r requirements.txt
 
 					ENTRYPOINT [ "gunicorn","-b",":8080","api:app" ]
+					```
+				</section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					### Selection of commands
+
+					- Download an Image from Docker Hub.
+					```Bash
+					docker pull python:3.10.5-slim-buster
+					```
+					- Run Container in interactive mode.
+					```Bash
+					docker run -it -d ubuntu
+					```
+					- List all running and stopped Containers.
+					```Bash
+					docker ps --all
+					```
+				</section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					### Selection of commands
+					- Access Container interactively.
+					```Bash
+					docker exec -it 94069905 bash
+					```
+					- Stop Container
+					```Bash
+					docker stop 94069905
+					```
+				</section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					### Live demo
+					```Bash
+					sudo docker image build -t s4app .
+
+					sudo docker image ls
+
+					sudo docker run --rm -p 80:8080 --env-file=env.list s4app
+
+					sudo docker ps --all
 					```
 				</section>
 			</section>
