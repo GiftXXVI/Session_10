@@ -12,27 +12,34 @@
 	<link rel="stylesheet" href="dist/theme/league.css">
 
 	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/atom-one-dark.css">
+	<link rel="stylesheet" href="plugin/highlight/material-vivid.css">
 </head>
 
 <body>
 	<div class="reveal">
 		<div class="slides">
 			<section data-markdown data-background-image="images/circle-scatter-haikei.svg" data-background-image="images/circle-scatter-haikei.svg">
+				### 🖱🖥⌨💻
 				## Full Stack Web Developer Nanodegree
 				### Session 10
+				#### Gift Chimphonda
 			</section>
-			<section data-markdown data-background-image="images/circle-scatter-haikei.svg" data-background-image="images/circle-scatter-haikei.svg">
-				## Recap
-				- [🔗 Psycopg2](https://strawpoll.com/polls/61gDBaR7Lyw)
-				- [🔗 ACID properties](https://strawpoll.com/polls/PbZqoNvLBnN)
-				- [🔗 Social Engineering](https://strawpoll.com/polls/eNg6RkX7AgA)
-				- [🔗 Authentication](https://strawpoll.com/polls/B2ZB3k1w7yJ)
-				- [🔗 RBAC](https://strawpoll.com/polls/2ayLWj4XqZ4)
+			<section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg" data-background-image="images/circle-scatter-haikei.svg">
+					## ⌚ Recap
+				</section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					### Questions
+					- [🔗 Psycopg2](https://strawpoll.com/polls/61gDBaR7Lyw)
+					- [🔗 ACID properties](https://strawpoll.com/polls/PbZqoNvLBnN)
+					- [🔗 Social Engineering](https://strawpoll.com/polls/eNg6RkX7AgA)
+					- [🔗 Authentication](https://strawpoll.com/polls/B2ZB3k1w7yJ)
+					- [🔗 RBAC](https://strawpoll.com/polls/2ayLWj4XqZ4)
+				</section>
 			</section>
 			<section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
-					## Containers
+					## 🗄 Containers
 				</section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### What is a Container?
@@ -54,7 +61,7 @@
 			</section>
 			<section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
-					## Docker
+					## 🚢 Docker
 				</section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### What is Docker?
@@ -86,7 +93,7 @@
 			</section>
 			<section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
-					## Docker Images
+					## 💿 Docker Images
 				</section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### What is a Docker Image
@@ -110,7 +117,7 @@
 			</section>
 			<section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
-					## Docker Hub
+					## 🎫 Docker Hub
 				</section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### What is Docker Hub?
@@ -143,7 +150,7 @@
 			</section>
 			<section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
-					## Dockerfiles
+					## 🗃 Dockerfiles
 				</section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### What are Dockerfiles?
@@ -177,27 +184,49 @@
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### Sample
 					```Dockerfile
-					FROM alpine
-					CMD ["echo", "Testing Docker!!"]
+					FROM python:stretch
+
+					RUN mkdir /app
+					COPY . /app
+					WORKDIR /app
+
+					RUN apt update
+					RUN apt install python3-pip -y
+					RUN pip install --upgrade pip
+					RUN pip install -r requirements.txt
+
+					ENTRYPOINT [ "gunicorn","-b",":8080","api:app" ]
 					```
 				</section>
 			</section>
 			<section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
-					## Resources
+					## 🕸 More From the Web
+				</section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					### Resources
 					- [🔗 What is a Container?](https://www.docker.com/resources/what-container/)
 					- [🔗 Docker Documentation](https://docs.docker.com/get-started/overview/)
 					- [🔗 Docker Engine](https://docs.docker.com/engine/)
 					- [🔗 Docker Desktop](https://docs.docker.com/desktop/)
 				</section>
 				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
-					## More Resources
+					### More Resources
 					- [🔗 Docker Playground](https://labs.play-with-docker.com/)
 					- [🔗 Docker Hub - Python](https://hub.docker.com/_/python)
 					- [🔗 Docker Command Reference - image](https://docs.docker.com/engine/reference/commandline/image/)
 					- [🔗 Docker Command Reference - container](https://docs.docker.com/engine/reference/commandline/container/)
 					- [🔗 Docker Hub](https://docs.docker.com/docker-hub/)
 				</section>
+			</section>
+			<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+				## 🙋‍♂️🙋‍♀️ Questions
+			</section>
+			<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+				## 💬 Feedback
+			</section>
+			<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+				## 🏁 The End
 			</section>
 		</div>
 	</div>
