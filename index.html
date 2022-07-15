@@ -9,20 +9,20 @@
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/blood.css">
+	<link rel="stylesheet" href="dist/theme/league.css">
 
 	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<link rel="stylesheet" href="plugin/highlight/atom-one-dark.css">
 </head>
 
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section data-markdown data-background-image="images/endless-constellation.svg">
+			<section data-markdown data-background-image="images/circle-scatter-haikei.svg" data-background-image="images/circle-scatter-haikei.svg">
 				## Full Stack Web Developer Nanodegree
 				### Session 10
 			</section>
-			<section data-markdown data-background-image="images/endless-constellation.svg">
+			<section data-markdown data-background-image="images/circle-scatter-haikei.svg" data-background-image="images/circle-scatter-haikei.svg">
 				## Recap
 				- [🔗 Psycopg2](https://strawpoll.com/polls/61gDBaR7Lyw)
 				- [🔗 ACID properties](https://strawpoll.com/polls/PbZqoNvLBnN)
@@ -31,37 +31,37 @@
 				- [🔗 RBAC](https://strawpoll.com/polls/2ayLWj4XqZ4)
 			</section>
 			<section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					## Containers
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### What is a Container?
 					- A container is a standard unit of software that packages up code and all its dependencies so the
 					application runs quickly and reliably from one computing environment to another.
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### Container Images
 					- Containers images are lightweight, standalone and they include everything needed to run an
 					application: code,
 					runtime, system tools, system libraries and settings.
 					- Container images become containers at runtime.
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### Why do we use Containers?
 					- Containers isolate software from its environment and ensure that it works uniformly despite
 					differences for instance between development and staging.
 				</section>
 			</section>
 			<section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					## Docker
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### What is Docker?
 					- Docker is an open platform for developing, shipping, and running applications.
 					- Docker provides the ability to package and run an application in a container.
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### Docker Engine (CLI)
 					- Docker Engine acts as a client-server application for building containers that can be accessed
 					from the Terminal.
@@ -70,14 +70,14 @@
 					- APIs: specify interfaces that programs can use to talk to and instruct the Docker daemon.
 					- docker: A command line interface (CLI) client.
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### Docker Destop (GUI)
 					- Docker Desktop is an easy-to-install application with a Graphical User Interface (GUI).
 					- It includes the Docker Engine.
 					- It is available for MacOS, Windows and Linux (deb package for Debian/Ubuntu and rpm package for
 					Fedora/Red Hat).
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### Docker Playground (Online)
 					- You can also use the Docker Playground to learn Docker in an online environment.
 					- You can also use you Terminal to ssh into the Playground VM.
@@ -85,22 +85,22 @@
 				</section>
 			</section>
 			<section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					## Docker Images
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### What is a Docker Image
 					- An image is a read-only template with instructions for creating a Docker container.
 					- It usually consists of a file system with files and packages necessary to run your applications.
 					- Often, an image is based on another image, with some additional customization.
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### Example Recipe
 					1. start with the Python3 image, install Flask, Flask-SQLAlchemy (and other requirements)
 					2. copy your source code files
 					3. define a program to run (such as gunicorn or waitress web servers)
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### ... From Images, To Containers
 					- From there you are able to create containers from your image.
 					- A container is a runnable instance of an image.
@@ -109,17 +109,17 @@
 				</section>
 			</section>
 			<section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					## Docker Hub
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### What is Docker Hub?
 					- Docker Hub is a service provided by Docker for finding and sharing container images.
 					- It is the world’s largest repository of container images.
 					- You can create public repositories for free or choose a subscription plan for private
 					repositories.
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### Features of Docker Hub
 					| Feature | Description |
 					|---|---|
@@ -127,26 +127,77 @@
 					| Teams & Organizations | Manage access to private repositories of container images. |
 					| Docker Official Images | Pull and use high-quality container images provided by Docker. |
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### Features of Docker Hub
 					| Feature | Description |
 					|---|---|
-					| Docker Verified Publisher Images | Pull and use high- quality container images provided by
-					external vendors. |
-					| Builds | Automatically build container images from GitHub and Bitbucket and push them to Docker
-					Hub. |
+					| Docker Verified Publisher Images | Pull and use high- quality container images provided by external vendors. |
+					| Builds | Automatically build container images from GitHub and Bitbucket and push them to Docker Hub. |
 				</section>
-				<section data-markdown>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
 					### Features of Docker Hub
 					| Feature | Description |
 					|---|---|
-					| Webhooks | Trigger actions after a successful push to a repository to integrate Docker Hub with
-					other services. |
+					| Webhooks | Trigger actions after a successful push to a repository to integrate Docker Hub with other services. |
 				</section>
 			</section>
-			<section data-markdown>
-				## Resources
-				https://www.docker.com/resources/what-container/
+			<section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					## Dockerfiles
+				</section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					### What are Dockerfiles?
+					- A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
+					- Docker can build images automatically by reading the instructions from a Dockerfile.
+					- A docker image consists of read-only layers of which each represents a Dockerfile instruction.
+					- Each instruction / command in a Dockerfile creates one layer.
+				</section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					### Dockerfile Instructions
+					- **FROM** defines a base image , ( creates a layer from the specified  Docker image.)
+					- **COPY** used to copy local files / directories to Docker Container.
+					- **ADD** allows you to copy from a URL source.
+					- **RUN**  executes command in a new image layer. (We can have multiple RUN  commands).
+					- **ENTRYPOINT**  defines a container’s executable.
+				</section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					### Dockerfile Instructions
+					- **WORKDIR** defines the work directory for subsequent instructions in the Dockerfile.
+					- **CMD** specifies what command to run within the container.
+					- **EXPOSE** documents which ports are exposed(Only used for documentation)
+					- **ENV** instruction sets the environment variable
+					- **VOLUME** creates a mount point with the specified name and marks it as holding externally mounted volumes from native host or other containers.
+				</section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					### What is a .dockerignore file?
+					- Similar to a .gitignore file used by git, a docker ignore file is a tool that can help you define the Docker build context you need.
+					- You can use it to exclude files and folders from the build context.
+					- This helps to avoid unnecessarily sending large or sensitive files and directories to the daemon and potentially adding them to images using **ADD**  or  **COPY .**
+				</section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					### Sample
+					```Dockerfile
+					FROM alpine
+					CMD ["echo", "Testing Docker!!"]
+					```
+				</section>
+			</section>
+			<section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					## Resources
+					- [🔗 What is a Container?](https://www.docker.com/resources/what-container/)
+					- [🔗 Docker Documentation](https://docs.docker.com/get-started/overview/)
+					- [🔗 Docker Engine](https://docs.docker.com/engine/)
+					- [🔗 Docker Desktop](https://docs.docker.com/desktop/)
+				</section>
+				<section data-markdown data-background-image="images/circle-scatter-haikei.svg">
+					## More Resources
+					- [🔗 Docker Playground](https://labs.play-with-docker.com/)
+					- [🔗 Docker Hub - Python](https://hub.docker.com/_/python)
+					- [🔗 Docker Command Reference - image](https://docs.docker.com/engine/reference/commandline/image/)
+					- [🔗 Docker Command Reference - container](https://docs.docker.com/engine/reference/commandline/container/)
+					- [🔗 Docker Hub](https://docs.docker.com/docker-hub/)
+				</section>
 			</section>
 		</div>
 	</div>
