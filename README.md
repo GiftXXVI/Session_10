@@ -59,3 +59,16 @@ Hakim's open source work is supported by <a href="https://github.com/sponsors/ha
 <div align="center">
   MIT licensed | Copyright © 2011-2022 Hakim El Hattab, https://hakim.se
 </div>
+
+---
+
+### Resources
+- [NodeJS Docker WebApp](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+- [Dockerize Your Flask Application](https://runnable.com/docker/python/dockerize-your-flask-application)
+- [Build Your Python Image](https://docs.docker.com/language/python/build-images/)
+- [Run Your Image as a Container](https://docs.docker.com/language/python/run-containers/)
+- [Getting Started With Docker](https://faun.pub/getting-started-with-docker-using-python-flask-application-b6dcd1a08626)
+- [Learn Docker in 7 Easy Steps - Full Beginner's Tutorial](https://www.youtube.com/watch?v=gAkwW2tuIqE)
+- [Docker Curriculum](https://docker-curriculum.com/)
+
+---
